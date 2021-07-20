@@ -1,7 +1,4 @@
-const express = require("express");
 
-
-const app = express();
 //game constants
 let inputDir = {x: 0, y: 0};
 const foodSound = new Audio("static/food-music.wav");
@@ -142,11 +139,4 @@ window.addEventListener('keydown',e => {
     default:
     break;
   }
-});
-let port = process.env.PORT;
-if(port == null || port == ""){
-  port = 3000;
-}
-app.listen(port, function() {
-  console.log("Server started on port 3000");
 });
